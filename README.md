@@ -10,7 +10,7 @@ An out-of-the-box kiosk system designed for the 270-degree Study Theatre. This r
 
 ### STEP 2 — Add the Videos (Required)
 Due to GitHub file size limits, the heavy 360° video assets are hosted separately.
-* Download the video assets ZIP from the Google Drive link provided in our project brief.
+* Download the video assets ZIP from the Google Drive link provided in our project brief. You can also follow this link: [https://drive.google.com/drive/folders/1Bi8P6TIGvcxc4ksKvDUzDwTXmYFdNcOk?usp=sharing].
 * Extract the video files and drop them directly into this folder path within the project:
   `App/vlc/Videos/`
 
