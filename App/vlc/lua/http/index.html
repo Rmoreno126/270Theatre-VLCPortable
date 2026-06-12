@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>270° Theatre Control Kiosk</title>
+    <link rel="stylesheet" href="css/kiosk.css">
+</head>
+<body>
+    
+    <header class="app-header">
+        <h1>Cal Poly <span>Humboldt</span></h1>
+        <p style="margin: 5px 0 0 0; color: #e0e0e0; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">270° Study Theatre Kiosk</p>
+    </header>
+    
+    <div class="global-controls">
+        <button class="control-btn btn-pause" onclick="togglePause()">Pause / Resume</button>
+        <button class="control-btn btn-loop" onclick="toggleLoop()">Toggle Loop</button>
+        <button class="control-btn btn-stop" onclick="stopPlayback()">Stop Playback</button>
+    </div>
+
+    <div class="custom-media-container">
+        <h3>▶ Play from USB Drive</h3>
+        <p class="usb-subtext">Plug in your USB drive, then follow the steps below to get the file path.</p>
+
+        <details class="usb-instructions">
+            <summary>How to get the file path ▾</summary>
+            <ol>
+                <li>Plug in your USB drive — Windows will assign it a drive letter (e.g., <code>D:</code> or <code>E:</code>).</li>
+                <li>Open <strong>File Explorer</strong> and navigate to your video file on the USB drive.</li>
+                <li>Hold <strong>Shift</strong> and <strong>right-click</strong> the video file.</li>
+                <li>Select <strong>"Copy as path"</strong> from the menu.</li>
+                <li>Paste the copied path into the field below and click <strong>Play to Wall</strong>.</li>
+            </ol>
+        </details>
+
+        <div class="usb-input-row">
+            <input type="text" id="customInput" class="custom-input"
+                placeholder='Paste path here — e.g., D:\my_video.mp4'>
+            <button class="control-btn custom-play-btn" onclick="playCustomMedia()">Play to Wall</button>
+        </div>
+    </div>
+
+    <div id="video-grid" class="grid">
+        Loading scenes...
+    </div>
+
+    <script src="js/kiosk.js"></script>
+</body>
+</html>
